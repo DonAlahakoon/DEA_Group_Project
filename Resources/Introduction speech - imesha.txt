@@ -1,0 +1,4 @@
+Main key points, 
+	. Mianly we focus on passenger ticket booking
+	. budget packages will be shown to the customer when they choose the flight. 
+	. passengers can have the accomadation details accoding to their destination from our official website and many more. 

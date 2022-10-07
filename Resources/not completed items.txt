@@ -1,0 +1,7 @@
+index.html => signin page not fitted, logo not fitted
+all level of photo selections
+ticket booking of all the level
+meal Photos need to be getted.
+Reservations photo
+every sign/signup buttons in pages
+logo changing.

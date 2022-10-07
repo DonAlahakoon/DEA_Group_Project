@@ -1,0 +1,16 @@
+MariaDB [phoenixairlinedb]> select * from destinationreview;
++----+---------+-----------+-------------+--------+
+| id | placeId | keyWord   | visitMethod | status |
++----+---------+-----------+-------------+--------+
+|  1 | 4       | America   | transit     | review |
+|  2 | 5       | Maldives  | direct      | review |
+|  3 | 6       | Singapore | direct      | review |
++----+---------+-----------+-------------+--------+
+3 rows in set (0.001 sec)
+
+MariaDB [phoenixairlinedb]>
+//2 = transit
+1 = direct
+
+1 = review
+2 = don't review

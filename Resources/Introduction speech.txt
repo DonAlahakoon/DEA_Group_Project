@@ -1,0 +1,8 @@
+Thank you all and to the professor Dr. chaminda wijesinghe sir. As you all know today we are here to explain our thoughts about the assignment on developing a web based system to an air line. According to the research we have done so far we have categorized our identified information and the ideas we come up with. so as you can see There are five major categories in here, they are passengers, staff, admin and finally the back end processes such as database creation and management. So let's begin, 
+
+
+	extra features slide, 
+. we assumed That the catering service is planned to get from outside so the food ordering and can be done through the system. and also can see the recieved notification through the system. 
+. And also the passenger able to book hotels nearby to the destination with out partnered hotels. 
+. Other than that renting a car and booking a travel guider is yet to come. 
+. and also anyone can comment on their visited places through our web pages so that a new commer can predict the place they are visiting from one place. 

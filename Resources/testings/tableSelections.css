@@ -1,0 +1,30 @@
+.select{
+    display: grid;
+    /* this will display the text as a grid */
+    grid-template-columns: repeat(3, 1fr);
+    /* this says that i want 3 columns with the equal width */
+    max-width: 300px;
+    height: 300px;
+    gap: 10px;
+    /* this will give a 1px gap between grids */
+}
+
+.select__item{
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    background: #eeeeee;
+    transition: background 0.1s;
+}
+
+.select__item--selected{
+    background: #bd1e2d;
+    color: white;
+
+}
+
+.selected__seats{
+    background: #005a0b;
+    color: white;
+}
