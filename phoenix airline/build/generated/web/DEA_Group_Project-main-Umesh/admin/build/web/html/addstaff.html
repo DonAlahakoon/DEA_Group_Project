@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Add Staff</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+         <style>
+             *{
+                margin: 0;
+                padding: 0;
+                font-family: arial;
+                box-sizing: border-box;
+            }
+            
+            body{
+                
+                height: 100vh;
+                display: grid;
+                place-items: center;
+                background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4)),url(../images/staff2.jpg);
+                background-size: 100% 150%;
+                background-repeat: no-repeat;
+            }
+            
+            table{
+                margin-top:-40%;
+                width: 600px;
+                opacity: 0.8;
+            }
+            
+            table,td{
+                padding: 20px;
+                border: 1px solid lightgray;
+                border-collapse: collapse;
+                text-align: center;
+                cursor: pointer;
+            }
+            
+            td{
+                font-size: 18px;
+                
+            }
+            
+            tr:nth-child(odd){
+                
+                background-color: lightblue;
+            }
+            
+            tr:nth-child(odd):hover{
+                
+                background-color: dodgerblue;
+                color:white;
+                transform: scale(1.5);
+                transition: transform 300ms ease-in;
+                
+            }
+            
+            tr:nth-child(even){
+                background-color: #ededed;
+            }
+            
+            tr:nth-child(even):hover{
+                
+                background-color: limegreen;
+                transform: scale(1.5);
+                transition: transform 300ms ease-in;
+            }
+           
+            
+            
+            
+        </style>
+    </head>
+    <body>
+        
+        <h1>- Add Staff Members -</h1>
+<form action="../AddstaffServlet" method="POST">
+            
+            
+             <table border="2" width="1" cellspacing="1">
+        
+            <tbody>
+                <tr>
+                    <td>staffID</td>
+                    <td><input type="text" name="staffID" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="Name" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="Email" value="" /></td>
+                </tr>
+                <tr>
+                    
+                    <td> <button class="button-1" type="submit" role="button">ADD STAFF</button></td>
+                    <td> <button class="button-1" type="reset" role="button">CLEAR</button></td>
+                   
+                </tr>
+            </tbody>
+             </table>
+            
+        </form>
+        
+    </body>
+</html>
