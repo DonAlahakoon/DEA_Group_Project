@@ -7,6 +7,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 body {
     width: 100%;
     min-height: 100vh;
@@ -18,6 +20,10 @@ body {
     align-items: center;
 }
 
+#staff
+{
+    ;  
+}
 .container {
     width: 400px;
     min-height: 400px;
