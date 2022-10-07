@@ -1,0 +1,141 @@
+.radio{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.radio__input{
+    display: none;
+}
+
+.radio__radio{
+    width: 1.5em;
+    height: 1.5em;
+    border: solid 2px #f0c3ca;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+.radio__radio::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #bd1e2d;
+    border-radius: 50%;
+    
+    transform: scale(0);
+    transition: transform 0.15s;
+}
+
+.radio__input:checked + .radio__radio::after{
+    transform: scale(1);
+}
+
+.form__label{
+    width: 50%;
+        margin-bottom: 20px;
+        border-left: none;
+}
+
+.form__label{
+    display: block;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.dateTop{
+    content: "";
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 9px;
+    top: 78px;
+    left: 50px;
+    height: 60px;
+    width: 300px;
+}
+
+.dateTopValues{
+    padding: 10px;
+    width: 130px;
+    text-align: center;
+    border-radius: 10px;
+    background: #f0c3ca;
+}
+
+.select{
+    display: grid;
+    /* this will display the text as a grid */
+    grid-template-columns: repeat(9, 1fr);
+    /* this says that i want 3 columns with the equal width */
+    max-width: 300px;
+    gap: 10px;
+    /* this will give a 1px gap between grids */
+}
+
+.select__item{
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    background: #eeeeee;
+    transition: background 0.1s;
+}
+
+.select__item--selected{
+    background: #bd1e2d;
+    color: white;
+}
+
+.selected__seats{
+    background: #005a0b;
+    color: white;
+}
+
+@media only screen and (max-width: 1490px){
+    .dateTop{
+        top: 75px;
+        left: 5px; 
+    }
+
+    .dateTopValues{
+        padding: 10px;
+        width: 130px; 
+    }
+}
+
+@media only screen and (max-width: 1435px){
+    .dateTop{
+        display: none;
+        /* grid-template-columns: repeat(10, 1fr);
+        gap: 4.5px;
+        left: 5px; */
+    }
+
+    .dateTopValues{
+        display: none;
+        /* padding: 5px;
+        border-radius: 5px; */
+    }
+
+    .select{
+        display: none;
+        /* max-width: 150px;
+        gap: 5px;  */
+        /* this will give a 1px gap between grids */
+    }
+
+    .select__item{
+        display: none;
+        /* padding: 5px;
+        border-radius: 5px;  */
+    }
+}
